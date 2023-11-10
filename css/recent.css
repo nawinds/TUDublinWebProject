@@ -1,0 +1,50 @@
+.poll_view {
+    background-color: white;
+    padding: 40px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.poll-view h3 {
+    padding-bottom: 0;
+}
+
+.poll_view form {
+    margin-top: 10px;
+}
+
+.poll_view form button[type="submit"] {
+    display: block;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    margin-top: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.poll_view form button[type="submit"]:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.poll_question {
+    margin-bottom: 0;
+}
+
+.poll_author {
+    font-size: 14px;
+}
+
+#mainTitle {
+    margin-top: 15px;   
+}
+
+#pagination {
+    margin-top: 15px;
+}

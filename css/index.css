@@ -1,0 +1,45 @@
+#create-poll-banner {
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    padding: 20px 30px 40px 30px;
+    margin-top: 10px;
+}
+
+#create-poll-banner h1 {
+    font-size: 48px;
+}
+
+/* #create-poll-banner a {
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 7px 10px 7px;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+} */
+
+#about-banner {
+    background-color: black;
+    text-align: center;
+    padding: 20px 30px 40px 30px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+#about-banner h3 {
+    color: rgb(230, 230, 230);
+}
+
+#about-banner a {
+    color: rgb(153, 153, 153);
+}
+
+#create-poll-banner h1 {
+    font-size: 48px;
+}

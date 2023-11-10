@@ -1,0 +1,46 @@
+form input, button {
+    display: block;
+    margin-top: 10px;
+}
+
+form button {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(102, 102, 102);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px;
+}
+form button[type="submit"] {
+    background-color: rgb(255, 0, 0);
+    font-size: 18px;
+    padding: 7px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form input {
+    border: solid grey 1px;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    font-size: 16px;
+    border: transparent;
+    background-color: white;
+}
+
+form input:focus {
+    border: none;
+    background-color: rgb(243, 243, 243);
+}
+
+#poll-form {
+    background-color: rgb(226, 226, 226);
+    padding: 20px;
+}
+
+#submitSection button {
+    display: inline;
+}
