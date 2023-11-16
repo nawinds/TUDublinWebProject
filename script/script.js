@@ -7,8 +7,9 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 
 
 // ADDING OPTIONS TO NEW POLL
-OPTIONS_NAMES = {3: "Third", 4: "Fourth", 5: "Fifth", 6: "Sixth", 7: "Seventh", 8: "Eighth", 9: "Ninth", 10: "Tenth"}
-let optionsCount = 2;
+OPTIONS_NAMES = {2: "Second", 3: "Third", 4: "Fourth", 5: "Fifth", 6: "Sixth", 7: "Seventh", 8: "Eighth", 9: "Ninth", 10: "Tenth"}
+let optionsCount = 1;
+let poll_progress = 0;
 
 function newPollAddOption()
 {
@@ -21,6 +22,7 @@ function newPollAddOption()
         newOption.type = "text";
         newOption.placeholder = OPTIONS_NAMES[optionsCount] + " option";
         optionsElement.appendChild(newOption)
+        newOption.focus();
         
         const new_poll_info_button = document.getElementById("new_poll_info");
         new_poll_info_button.setAttribute("data-bs-title", (10 - optionsCount) + " options left");
@@ -39,5 +41,37 @@ function newPollAddOption()
     else
     {
         alert("You can only have up to 10 options!")
+    }
+}
+
+function pollNext()
+{
+    switch (poll_progress)
+    {
+        case 0:
+            const pollTitle = document.getElementById("poll_title").value;
+            document.getElementById("poll_title_header").textContent = pollTitle;
+            document.getElementById("poll_title").style.display = "none";
+            document.getElementById("poll_name").style.display = "";
+            document.getElementById("poll_name").focus();
+            poll_progress++;
+            break;
+        case 1:
+            const pollName = document.getElementById("poll_name").value;
+            document.getElementById("poll_author_header").textContent = pollName;
+            document.getElementById("poll_name").style.display = "none";
+            document.getElementById("poll_email").style.display = ""; 
+            document.getElementById("poll_email").focus();
+            poll_progress++;
+            break;
+        case 2:
+            document.getElementById("poll_email").style.display = "none";
+            document.getElementById("pollNextButton").style.display = "none";
+            document.getElementById("poll_option").style.display = "";
+            document.getElementById("submitSection").style.display = "";
+            document.getElementById("poll_submit").style.display = "";
+            document.getElementById("poll_option").focus();
+            poll_progress++;
+            break;
     }
 }

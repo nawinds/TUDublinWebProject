@@ -26,7 +26,7 @@ form input {
     border: solid grey 1px;
     border-radius: 5px;
     padding: 5px 5px 5px 5px;
-    font-size: 16px;
+    font-size: 24px;
     border: transparent;
     background-color: white;
 }
@@ -43,4 +43,8 @@ form input:focus {
 
 #submitSection button {
     display: inline;
+}
+
+#pollNextButton {
+    font-size: 22px;
 }

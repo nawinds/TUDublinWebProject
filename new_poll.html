@@ -46,17 +46,18 @@
         </div>
     </nav>
     <section id="poll-form">
-        <h1>Create your first poll below!</h1>
+        <h1 id="poll_title_header">Create your first poll below!</h1>
+        <h6 id="poll_author_header"></h6>
         <hr>
         <form method="post">
             <div id="new_poll_options">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Poll title">
-                <input type="text" placeholder="First option">
-                <input type="text" placeholder="Second option">
+                <input type="text" placeholder="Poll title" id="poll_title" autofocus> 
+                <input type="text" placeholder="Name" style="display: none" id="poll_name">
+                <input type="email" placeholder="Email" style="display: none" id="poll_email">
+                <input type="text" placeholder="First option" style="display: none" id="poll_option">
             </div>
-            <div id="submitSection">
+            <button type="button" onclick="pollNext()" id="pollNextButton">Next</button>
+            <div id="submitSection" style="display: none">
                 <button id="add_option_button" type="button" onclick="newPollAddOption()">
                     + Add option
                 </button>
@@ -65,7 +66,7 @@
                     <i class="bi bi-info-circle"></i>
                 </button>
             </div>
-            <button type="submit" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Your poll will be published immediately">
+            <button type="submit" id="poll_submit" style="display: none" onsubmit="newPollSubmit()" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Your poll will be published immediately">
                 Create
             </button>
         </form>
