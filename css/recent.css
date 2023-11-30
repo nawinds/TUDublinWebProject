@@ -1,8 +1,11 @@
-.poll_view {
+#recent_polls {
     background-color: white;
     padding: 40px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+.poll_view {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
@@ -13,6 +16,10 @@
 
 .poll_view form {
     margin-top: 10px;
+}
+
+label {
+    padding-left: 4px;
 }
 
 .poll_view form button[type="submit"] {

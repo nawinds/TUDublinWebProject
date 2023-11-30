@@ -48,16 +48,7 @@
         <h1 id="mainTitle">Explore what others have posted today</h1>
         <hr>
     </section>
-    <section class="poll_view">
-        <h3 class="poll_question">Are you satisfied with QuickPolls?</h3>
-        <span class="poll_author text-muted">Admin</span>
-        <form class="poll_options" method="post">
-            <input type="radio" id="poll_satisfaction_yes" name="poll_answer" value="Yes">
-            <label for="poll_satisfaction_yes">Yes</label><br>
-            <input type="radio" id="poll_satisfaction_no" name="poll_answer" value="No">
-            <label for="poll_satisfaction_no">No</label>
-            <button type="submit">Submit</button>
-        </div>
+    <section id="recent_polls">
     </section>
     <nav id="pagination" aria-label="Page navigation">
         <ul class="pagination">
@@ -75,5 +66,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
       crossorigin="anonymous"></script>
     <script src="script/script.js"></script>
+    <script src="script/render_polls.js"></script>
 </body>
 </html>
