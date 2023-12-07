@@ -75,3 +75,15 @@ function pollNext()
             break;
     }
 }
+
+function validateForm() {
+    let email = document.getElementById("InputEmail").value;
+
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address");
+        return false;
+    }
+
+    return true;
+}
