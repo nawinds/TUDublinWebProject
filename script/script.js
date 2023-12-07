@@ -78,6 +78,23 @@ function pollNext()
 
 function validateForm() {
     let email = document.getElementById("InputEmail").value;
+    let name = document.getElementById("InputName").value;
+    let message = document.getElementById("FormControlTextarea").value;
+
+    if (name === "") {
+        alert("Name is required");
+        return false;
+    }
+
+    if (email === "") {
+        alert("Email is required");
+        return false;
+    }
+
+    if (message === "") {
+        alert("Message is required");
+        return false;
+    }
 
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
